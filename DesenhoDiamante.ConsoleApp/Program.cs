@@ -2,9 +2,12 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            Console.Write("Digite um número impar (inteiro): ");
+            int NumeroDiamante = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine(new string('X', NumeroDiamante));
         }
     }
 }
