@@ -33,5 +33,26 @@ namespace DesenhoDiamante.ConsoleApp
         {
             Console.WriteLine(new string('X', NumeroDiamante));
         }
+
+        public string ParteBaixo(int NumeroDiamante)
+        {
+            int Subtracao = 0;
+            StringBuilder Diamante = new StringBuilder();
+            int EspacoInferior = NumeroDiamante / 2;
+            int Espacos = 1;
+            int QuantidadeX = NumeroDiamante - 2;
+            for (int i = EspacoInferior; i <= NumeroDiamante; i++)
+            {
+                if (QuantidadeX < 0 || Espacos >= NumeroDiamante)
+                {
+                    break;
+                }
+                Diamante.AppendLine(new string(' ', Espacos) + new string('X', QuantidadeX));
+                Subtracao += 2;
+                QuantidadeX = NumeroDiamante - 2 - Subtracao;
+                Espacos += 1;
+            }
+            return Diamante.ToString();
+        }
     }
 }

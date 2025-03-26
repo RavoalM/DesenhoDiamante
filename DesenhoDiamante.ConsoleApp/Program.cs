@@ -24,18 +24,8 @@
                     
                     DiamanteDesenho.ParteMeio(NumeroDiamante);
 
-                    for (int i = 0; i < NumeroDiamante; i++)
-                    {
-
-                        Espacos += 1;
-                        Subtracao += 2;
-
-                        int QuantidadeX = NumeroDiamante - Subtracao;
-                        if (QuantidadeX < 0)
-                            break;
-
-                        Console.WriteLine(new string(' ', Espacos) + new string('X', QuantidadeX));
-                    }
+                   string ParteBaixo = new DiamanteDesenho().ParteBaixo(NumeroDiamante).TrimEnd();
+                    Console.WriteLine(ParteBaixo);
                     break;
                 }
 
