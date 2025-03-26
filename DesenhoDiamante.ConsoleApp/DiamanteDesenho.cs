@@ -10,11 +10,14 @@ namespace DesenhoDiamante.ConsoleApp
     {
         public string ParteCima(int NumeroDiamante)
         {
+
             int Soma = 0;
-            StringBuilder Diamante = new StringBuilder();
             int EspacoSuperior = NumeroDiamante / 2;
             int Espacos = EspacoSuperior;
             int QuantidadeX = 1;
+            StringBuilder Diamante = new StringBuilder();
+
+            Console.ForegroundColor = ConsoleColor.Blue;
             for (int i = EspacoSuperior; i <= NumeroDiamante; i++)
             {
                 if (QuantidadeX >= NumeroDiamante || Espacos < 0)
@@ -31,16 +34,19 @@ namespace DesenhoDiamante.ConsoleApp
         }
         public static void ParteMeio(int NumeroDiamante)
         {
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine(new string('X', NumeroDiamante));
         }
 
         public string ParteBaixo(int NumeroDiamante)
         {
             int Subtracao = 0;
-            StringBuilder Diamante = new StringBuilder();
             int EspacoInferior = NumeroDiamante / 2;
             int Espacos = 1;
             int QuantidadeX = NumeroDiamante - 2;
+            StringBuilder Diamante = new StringBuilder();
+
+            Console.ForegroundColor = ConsoleColor.Blue;
             for (int i = EspacoInferior; i <= NumeroDiamante; i++)
             {
                 if (QuantidadeX < 0 || Espacos >= NumeroDiamante)
@@ -52,6 +58,7 @@ namespace DesenhoDiamante.ConsoleApp
                 QuantidadeX = NumeroDiamante - 2 - Subtracao;
                 Espacos += 1;
             }
+            
             return Diamante.ToString();
         }
     }
