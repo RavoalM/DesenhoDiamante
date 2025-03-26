@@ -10,7 +10,6 @@ namespace DesenhoDiamante.ConsoleApp
     {
         public string ParteCima(int NumeroDiamante)
         {
-
             int Soma = 0;
             int EspacoSuperior = NumeroDiamante / 2;
             int Espacos = EspacoSuperior;
