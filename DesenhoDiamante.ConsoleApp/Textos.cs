@@ -27,8 +27,8 @@ namespace DesenhoDiamante.ConsoleApp
         public static void Introducao()
         {
             Console.Clear();
-            Console.WriteLine("Bem vindo ao programa de desenho de diamante de números impares (estranhamente especifico)");
-            Console.WriteLine("Digite um número ímpar para desenhar um diamante");
+            Console.WriteLine("Bem vindo ao programa de desenho de diamante a partir de um número (estranhamente especifico)");
+            Console.WriteLine("Digite um número para tentar desenhar um diamante");
         }
 
         public static void Decoracao()
