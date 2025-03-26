@@ -4,13 +4,13 @@
 
 ## Introdução
 
-Este programa gera um diamante simétrico feito com caracteres, baseado em um número ímpar fornecido pelo usuário. Simples, elegante e perfeito para testar sua lógica de programação!
+Este programa gera um diamante simétrico feito com caracteres, baseado em um número que deve ser descoberto pelo usuário. Simples, elegante e perfeito para testar sua lógica!
 
 *°:⋆ₓₒ ✧Você está pronto para ver um diamante brilhar na tela? Execute o programa e aprecie esse padrão!✧ₒₓ⋆:°*
 
 ## Propriedades do programa
 
-- **Interatividade**: O programa solicita um número ímpar ao usuário e exibe um diamante proporcional ao valor inserido.
+- **Interatividade**: O programa solicita um número ao usuário que usuario ira ter que descobrir e então exibe um diamante proporcional ao valor inserido.
 <br> <br>
 - **Validação de Entrada**: Caso o usuário insira um valor inválido, o programa avisa e solicita uma nova entrada.
 <br> <br>
